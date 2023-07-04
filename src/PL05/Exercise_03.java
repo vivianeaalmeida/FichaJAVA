@@ -10,7 +10,7 @@ public class Exercise_03 {
         int[] vetor = new int[10];
         int max = 0;
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 1; i < 10; i++){
             System.out.println("Insira um valor no vetor["+i+"]: ");
             vetor[i] = input.nextInt();
             if(vetor[i] > max){
@@ -20,3 +20,5 @@ public class Exercise_03 {
         System.out.println("O maior valor eh: " + max);
     }
 }
+
+//fazer com valores negativos
