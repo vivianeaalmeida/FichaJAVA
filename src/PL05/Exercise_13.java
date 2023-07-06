@@ -21,7 +21,7 @@ public class Exercise_13 {
         for(int i = 0; i < matriz.length; i++){
                 sum += matriz[i][i];
             }
-        System.out.println("soma " + sum);
+        System.out.println("Soma dos elementos da diagonal principal: " + sum);
         }
 
 }
