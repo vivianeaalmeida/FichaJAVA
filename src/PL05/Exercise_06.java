@@ -18,7 +18,10 @@ public class Exercise_06 {
             if(vetor[i] < primeiroNum){
                 ehCrescente = false;
             }
+            primeiroNum = vetor[i];
         }
+
+
         if(ehCrescente == false){
             System.out.println("A sequencia não é crescente");
         } else {
