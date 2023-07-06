@@ -34,4 +34,7 @@ public class Exercise_06 {
 /*
 if(itemAnterior < proximoItem)
 if(itemAtual < itemAnterior)
+obs vi: entrou false, mantem falso, pois se nao fica trocando estado
+true false true false
+e nao era esse o prop.
  */
