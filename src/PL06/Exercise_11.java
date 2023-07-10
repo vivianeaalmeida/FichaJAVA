@@ -63,8 +63,8 @@ public class Exercise_11 {
             //scanner obrigatorio
             Scanner input = new Scanner(System.in);
             //declarar variáveis
-            int tam, opcao;
-            boolean continuar = true;
+            int tam, opcao, continuar;
+
 
             System.out.println("Insira o tamanho do Array: ");
             tam = input.nextInt();
@@ -90,12 +90,10 @@ public class Exercise_11 {
                             break;
                     }
 
-                } while (opcao < 4);
-            } while (continuar == false);
-
-
-
-
+                } while (opcao < 1 || opcao > 3);
+                System.out.println("Deseja continuar? 1-Sim | 2-Não");
+                continuar = input.nextInt();
+            } while (continuar == 1);
         }
 }
 
