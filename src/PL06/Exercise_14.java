@@ -5,13 +5,14 @@ import java.util.Scanner;
 public class Exercise_14 {
     static int somarMatrizes(int[][] matriz1, int[][] matriz2){
         int soma = 0;
-        //passar pela 1 matriz
+
+        //passar pela 1 matriz e somar
         for(int linha = 0; linha < matriz1.length; linha++){
             for(int coluna = 0; coluna < matriz1.length; coluna++){
                 soma += matriz1[linha][coluna];
             }
         }
-        //passar pela 2 matriz
+        //passar pela 2 matriz e somar
         for(int linha = 0; linha < matriz2.length; linha++){
             for(int coluna = 0; coluna < matriz2.length; coluna++){
                 soma += matriz2[linha][coluna];
@@ -20,25 +21,23 @@ public class Exercise_14 {
         return soma;
     }
 
-    static int novaMatriz(int[][] matriz1, int[][] matriz2){
-        
-    }
-
     public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
-        //declarar variáveis
+        //declaração das variáveis
         int[][] matriz1 = new int[3][3];
         int[][] matriz2 = new int[3][3];
+        int[][] matriz3 = new int[3][3];
 
-        //criar as matrizes
+        //criação das matrizes
+        //matriz1
         for(int linha = 0; linha < 3; linha++){
             for (int coluna = 0; coluna < 3; coluna++){
                 System.out.print("Insira um valor: ");
                 matriz1[linha][coluna] = input.nextInt();
             }
         }
-
+        //matriz2
         for(int linha = 0; linha < 3; linha++){
             for (int coluna = 0; coluna < 3; coluna++){
                 System.out.print("Insira um valor: ");
@@ -46,8 +45,17 @@ public class Exercise_14 {
             }
         }
 
-        int soma = somarMatrizes(matriz1,matriz2);
+        //nova matriz com a soma das outras matrizes. Verificar possib função.
+        //matriz3
+        for(int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                matriz3[i][j] = matriz1[i][j] + matriz2[i][j];
+            }
+        }
+
+        int soma = somarMatrizes(matriz1,matriz2); //inserir a função numa variavel p exec. e retorno
         System.out.print(soma);
+        System.out.print(matriz3);
     }
 }
 
