@@ -49,29 +49,32 @@ public class Exercise_06 {
     static void escolhaFuncao(int num){
         Scanner input = new Scanner(System.in);
         int opcao;
-        do {
-            System.out.println("Procedimento \n1 - é par " + "\n2 - é positivo \n3- é primo \n4- é perfeito");
-            System.out.println("Insira uma opção: ");
+        do{
+            do {
+                System.out.println("Procedimento \n1 - É par? " + "\n2 - É positivo? \n3 - É primo? \n4 - É perfeito? \n5 - Sair");
+                System.out.println("Insira uma opção: ");
                 opcao = input.nextInt();
-            } while (opcao < 1 || opcao > 4);
+            } while (opcao < 1 || opcao > 5); //enquanto opcao invalida, repita a pergunta (do)
 
-        switch (opcao){
-            case 1:
-                System.out.println(parOuImpar(num));
-                break;
+            switch (opcao){
+                case 1:
+                    System.out.println(parOuImpar(num));
+                    break;
 
-            case 2:
-                System.out.println(positivoOuNegativo(num));
-                break;
+                case 2:
+                    System.out.println(positivoOuNegativo(num));
+                    break;
 
-            case 3:
-                System.out.println(numPrimo(num));
-                break;
+                case 3:
+                    System.out.println(numPrimo(num));
+                    break;
 
-            case 4:
-                System.out.println(numPerf(num));
-                break;
-        }
+                case 4:
+                    System.out.println(numPerf(num));
+                    break;
+            }
+        } while (opcao != 5);
+
     }
 
     //Chamada da funcao e opcao do usuario
