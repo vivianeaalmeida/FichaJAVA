@@ -32,9 +32,10 @@ public class Exercise_13 {
 }
 
 /*
+zzzzzz  zzzzzz
+z****z  z****z
+z****z
 zzzzzz
-z
-z
 
 
 
