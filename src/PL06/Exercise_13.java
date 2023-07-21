@@ -7,11 +7,13 @@ public class Exercise_13 {
     static void imprimeCaracter(String letra, int numLinhas, int numColunas){
         for(int i = 0; i < numLinhas; i++){
             for(int j = 0; j < numColunas; j++){
-                if(i == 0 || i == 4){  //n teste em i e j
+                if((i == 0 || i == numLinhas - 1) || j == 0){  //n teste em i e j
                     System.out.print(letra);
                 }
-                if(j == 0 || j == 5){
+                else if(j == numColunas - 1){
                     System.out.println(letra);
+                } else {
+                    System.out.print(i);
                 }
             }
         }
@@ -65,7 +67,7 @@ COLUNAS: 5
 [1][0]                             [1][5]
 [2][0]                             [2][5]
 [3][0]                             [3][5]
-[4][0] [4][1] [4][2] [4][3] [4][4] [5][4]
+[4][0] [4][1] [4][2] [4][3] [4][4] [5][5]
 
 for(int i = 0; i < 4; i++){
     for(int j = 0; j < 5; j++){
